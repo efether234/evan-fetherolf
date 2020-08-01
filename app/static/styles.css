@@ -13,16 +13,28 @@ section {
     position: relative;
 }
 
-h1 {
-    display: block;
+.site__title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.site__heading {
+    flex: 0 1 auto;
     font-family: brandon-grotesque, sans-serif;
     font-size: 4rem;
-    font-style: italic;
     font-weight: 900;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.site__subheading {
+    flex: 0 1 auto;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,13 +45,13 @@ h1 {
 }
 
 @media (max-device-width: 640px) {
-    h1 {
+    .site-heading {
         font-size: 3rem;
     }
 }
 
 @media (max-device-width: 480px) {
-    h1 {
+    .site-heading {
         font-size: 2.3rem;
     }
 }
