@@ -1,11 +1,20 @@
-* {
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
 
 body {
+    box-sizing: border-box;
     color: #131313;
     font-size: 62.5%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1140px;
 }
 
 .site__title {
@@ -60,6 +69,27 @@ body {
 .site__link:hover {
     background-color: #131313;
     color: #fff;
+}
+
+/* ========================= */
+/* Blog Post                 */
+/* ========================= */
+
+.post__title {
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.post__dateline {
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.post__content {
+    font-family: adobe-caslon-pro, serif;
+    font-size: 1.6rem;
 }
 
 @media (prefers-color-scheme: dark) {
