@@ -17,6 +17,48 @@ body {
     width: 1140px;
 }
 
+/* ========================= */
+/* Header                    */
+/* ========================= */
+
+.header{
+    align-items: center;
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.header__logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding; 0;
+}
+
+.header__nav li {
+    display: inline;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+}
+
+.header__nav li:last-child {
+    margin-right: 0;
+}
+
+/* ========================= */
+/* Home                      */
+/* ========================= */
+
 .site__title {
     align-items: center;
     display: flex;
@@ -55,7 +97,7 @@ body {
     color: #131313;
     font-family: brandon-grotesque, sans-serif;
     font-size: 1.6rem;
-    font-weight: 100;
+    font-weight: 400;
     margin-right: 2rem;
     padding: .1rem 3rem;
     text-align: center;
@@ -72,7 +114,7 @@ body {
 }
 
 /* ========================= */
-/* Blog Post                 */
+/* Blog                      */
 /* ========================= */
 
 .post__title {
