@@ -30,7 +30,7 @@ body {
 
 .header__logo {
     font-family: brandon-grotesque, sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 
@@ -47,12 +47,24 @@ body {
 
 .header__nav li {
     display: inline;
+    font-family: brandon-grotesque, sans-serif;
     font-size: 1.6rem;
+    font-weight: 900;
     margin-right: 2rem;
+    text-transform: uppercase;
 }
 
 .header__nav li:last-child {
     margin-right: 0;
+}
+
+.header__nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__nav a:hover {
+    border-bottom: 1px solid #fff;
 }
 
 /* ========================= */
@@ -117,21 +129,35 @@ body {
 /* Blog                      */
 /* ========================= */
 
+.post__header {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.post__header hr {
+    border-top: 1px solid #fff;
+    width: 10%;
+}
+
 .post__title {
-    font-family: brandon-grotesque, sans-serif;
+    font-family: adobe-caslon-pro, serif;
     font-size: 4rem;
-    text-transform: uppercase;
+    font-weight: 700;
+    /* text-transform: uppercase; */
 }
 
 .post__dateline {
     font-family: brandon-grotesque, sans-serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 .post__content {
-    font-family: adobe-caslon-pro, serif;
+    font-family: neue-haas-unica, sans-serif;
     font-size: 1.6rem;
+    font-weight: 200;
 }
 
 @media (prefers-color-scheme: dark) {

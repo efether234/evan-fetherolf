@@ -3,7 +3,7 @@
     
     <div class="container">
         <header class="header">
-            <h1 class="header__logo"><a href="{{ url_for('main.index') }}">Evan Fetherolf</a></h1>
+            <h1 class="header__logo"><a href="{{ url_for('main.index') }}">EF</a></h1>
             <nav class="header__nav">
                 <ul>
                     <li><a href="#">GitHub</a></li>
@@ -17,8 +17,11 @@
     <div class="container">
         {% for post in posts %}
             <article class="post">
-                <h2 class="post__title">{{ post.title }}</h2>
-                <span class="post__dateline">{{ post.author }} | {{ post.date_posted }}</span>
+                <header class="post__header">
+                    <h2 class="post__title">{{ post.title }}</h2>
+                    <span class="post__dateline">{{ post.author }} | {{ post.date_posted }}</span>
+                    <hr>
+                </header>
                 <p class="post__content">{{ post.content }}</p>
             </article>
         {% endfor %}
