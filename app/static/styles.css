@@ -30,7 +30,8 @@ body {
 
 .header__logo {
     font-family: brandon-grotesque, sans-serif;
-    font-size: 4rem;
+    font-size: 2rem;
+    line-height: 1.1em;
     text-transform: uppercase;
 }
 
@@ -42,7 +43,7 @@ body {
 .header__nav ul {
     list-style-type: none;
     margin: 0;
-    padding; 0;
+    padding: 0;
 }
 
 .header__nav li {
@@ -63,7 +64,8 @@ body {
     text-decoration: none;
 }
 
-.header__nav a:hover {
+.header__nav a:hover,
+.selected {
     border-bottom: 1px solid #fff;
 }
 
@@ -145,6 +147,7 @@ body {
     font-family: adobe-caslon-pro, serif;
     font-size: 4rem;
     font-weight: 700;
+    margin-bottom: -1.5rem;
     /* text-transform: uppercase; */
 }
 
@@ -152,6 +155,7 @@ body {
     font-family: brandon-grotesque, sans-serif;
     font-size: 2rem;
     font-weight: 400;
+    margin-bottom: 1.25rem;
 }
 
 .post__content {
