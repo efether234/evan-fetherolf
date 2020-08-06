@@ -6,10 +6,13 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     box-sizing: border-box;
     color: #131313;
-    font-size: 62.5%;
 }
 
 .container {
@@ -24,19 +27,19 @@ body {
 .header{
     align-items: center;
     display: flex;
-    height: 8rem;
+    height: 13rem;
     justify-content: space-between;
 }
 
 .header__logo {
     font-family: brandon-grotesque, sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1.1em;
     text-transform: uppercase;
 }
 
 .header__logo a {
-    color: #fff;
+    color: #131313;
     text-decoration: none;
 }
 
@@ -49,9 +52,9 @@ body {
 .header__nav li {
     display: inline;
     font-family: brandon-grotesque, sans-serif;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     font-weight: 900;
-    margin-right: 2rem;
+    margin-right: 3rem;
     text-transform: uppercase;
 }
 
@@ -60,13 +63,13 @@ body {
 }
 
 .header__nav a {
-    color: #fff;
+    color: #131313;
     text-decoration: none;
 }
 
 .header__nav a:hover,
 .selected {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #131313;
 }
 
 /* ========================= */
@@ -77,32 +80,32 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 1.75rem);
+    height: calc(100vh - 2.8rem);
     justify-content: center;
-    margin-top: 1.75rem;
+    margin-top: 2.8rem;
 }
 
 .site__heading {
     flex: 0 1 auto;
     font-family: brandon-grotesque, sans-serif;
-    font-size: 5rem;
+    font-size: 8rem;
     font-weight: 900;
     line-height: 1.1em;
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     text-transform: uppercase;
 }
 
 .site__subheading {
     flex: 0 1 auto;
     font-family: adobe-caslon-pro, serif;
-    font-size: 2rem;
+    font-size: 3.2rem;
     font-weight: 400;
     text-transform: capitalize;
 }
 
 .site__links {
     display: flex;
-    padding-top: 3.5rem;
+    padding-top: 5.6rem;
 }
 
 .site__link {
@@ -110,10 +113,10 @@ body {
     border-radius: 2rem;
     color: #131313;
     font-family: brandon-grotesque, sans-serif;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    margin-right: 2rem;
-    padding: .1rem 3rem;
+    margin-right: 3.2rem;
+    padding: .2rem 5rem;
     text-align: center;
     text-decoration: none;
 }
@@ -131,6 +134,11 @@ body {
 /* Blog                      */
 /* ========================= */
 
+.post {
+    margin-bottom: 11rem;
+    width: 68rem;
+}
+
 .post__header {
     align-items: baseline;
     display: flex;
@@ -139,28 +147,27 @@ body {
 }
 
 .post__header hr {
-    border-top: 1px solid #fff;
+    border-top: 1px solid #131313;
     width: 10%;
 }
 
 .post__title {
     font-family: adobe-caslon-pro, serif;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 700;
-    margin-bottom: -1.5rem;
-    /* text-transform: uppercase; */
+    line-height: 1em;
 }
 
 .post__dateline {
     font-family: brandon-grotesque, sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     margin-bottom: 1.25rem;
 }
 
 .post__content {
     font-family: neue-haas-unica, sans-serif;
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     font-weight: 200;
 }
 
