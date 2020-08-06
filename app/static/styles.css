@@ -29,6 +29,7 @@ body {
     display: flex;
     height: 13rem;
     justify-content: space-between;
+    margin-bottom: 4rem;
 }
 
 .header__logo {
